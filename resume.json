@@ -1,0 +1,99 @@
+{
+    "first_name": "Stephen", 
+    "last_name": "Tanksley",
+    "phone_number": "214-952-0979",
+    "email": "stephen.tanksley@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/stephentanksley",
+    "github": "https://www.github.com/stephentanksley",
+    "education": [
+        {
+            "institution": "Lambda School/Bloom School of Technology",
+            "date_ended": "2020-10",
+            "degree": "Non-degree certificate",
+            "program": "Web Development/Computer Science"
+        },
+        {
+            "institution": "Columbia College Chicago",
+            "date_ended": "2015-06",
+            "degree": "MFA",
+            "program": "Master of Fine Arts - Music Composition for the Screen"
+        },
+        {
+            "institution": "University of Minnesota - Duluth",
+            "date_ended": "2012-06",
+            "degree": "MM",
+            "program": "Master of Music - Performance"
+        },
+        {
+            "institution": "Wheaton College Conservatory of Music",
+            "date_ended": "2010-06",
+            "degree": "BM",
+            "program": "Bachelor of Music - Performance"
+        },
+        {
+            "institution": "Dallas Colleges",
+            "date_ended": "2006-06",
+            "degree": "No degree awarded",
+            "program": "General studies/Music"
+        }
+    ],
+"languages": ["Python", "SQL", "JavaScript", "Rust", "HTML", "CSS"],
+    "frameworks_and_libraries": ["FastAPI", "PySpark", "Puppeteer", "Pytest", "SQLAlchemy", "ReactJS", "NodeJS", "Express"],
+    "databases": ["PostgreSQL", "MS-SQL Server"],
+    "architecture": ["Amazon Web Services (AWS)", "Docker", "Job Scheduler 7 (JS7)", "Pentaho Kettle"],
+    "currently_learning": ["Rust", "AWS Glue", "AWS RDS", "AWS EC2", "Streamlit", "Apache Kafka"],
+    "professional_experience": {
+        "select_rehabilitation": {
+            "title": "Application Engineer",
+            "date_started": "2022-07",
+            "date_ended": "present",
+            "responsibilities": [
+                "Designed and implemented extensible Docker-based Python CLI ETL utility to migrate data from MS-SQL Server to Postgres with optional intermediate transformations",
+                "Designed and implemented pre-commit hook components for Pentaho Kettle transformation files to enable standardized deployment across projects and eliminate regressions",
+                "Separated master config into discrete JSON config files per table to allow utility to run with arbitrary tables, reducing debugging time and improving developer experience",
+                "Developed and maintained event-driven job workflows using Job Scheduler 7 for orchestration",
+                "Implemented standardized tooling setup script to automate Python environment setup for new projects, reducing time needed to spin up a new project and ensuring consistency",
+                "Performed analysis on data quality issues (missing data, inaccurate data) to ensure accuracy for therapists, reporting analysts and patients",
+                "Integrated new facility data sources into daily ETL workflow with minimal downtime for users by developing and testing processes in parallel with current production workflow",
+                "Modeled and implemented new views and ETL integrations to uphold compliance requirements for payroll based journaling (PBJ)",
+                "Optimized current warehouse views to remove unnecessary joins and improve performance",
+                "Designing and implementing integration test suite using Pytest for testing PostgreSQL to PostgreSQL transfers and automating data quality checks"
+            ]
+        },
+        "jll_technologies": {
+            "title": "Data Engineer I",
+            "date_started": "2021-07",
+            "date_ended": "2022-07",
+            "responsibilities": [
+                "Contributed to ongoing redesign and implementation of PySpark ETL framework using Azure",
+                "Scheduled ETL jobs to write to SQL marts/Delta Lake with minimal interruptions for users",
+                "Contributed to unit/integration test suites to ensure confidence in new features and reduce regressions",
+                "Performed ingestion project to migrate orphaned data from local data warehouse to central data lake",
+                "Standardized setup and deployment documentation to enhance team efficiency ",
+                "Collaborated with other teams to migrate from one-off ETL scripts to a config-driven framework",
+                "Spearheaded initiative to identify and publish a directory of internal subject matter experts to aid ingestion work"
+            ]
+        }
+    },
+    "personal_projects": {
+        "pathfinder_docker_server": {
+            "description": "Developed a solution to host an instance of Foundry Virtual Tabletop (VTT) software in Docker container hosted locally on a Raspberry Pi 4 using secure tunnel through Cloudflare",
+            "responsibilities": [],
+            "deployed_url": "https://host.endtimes-foundry.online"
+        },
+        "bike_share_data_pipeline": {
+            "description": "Originally intended only to be a project to practice data engineering from scratch without following a tutorial, this project is a data pipeline to retrieve, process and publish data from Chicago's Divvy Bike Share open data repository into an interactive application to promote bicycle usage",
+            "responsibilities": [
+                "Developed Puppeteer web crawler to scrape CSV files from Divvy's AWS S3 bucket and download them to a local directory",
+                "Implemented ingestion/transformation workflow to enrich and load data to PostgreSQL development database hosted in Docker",
+                "Wrote an async rate-limited request utility to make 380k+ requests to Mapbox's Directions API to enrich Divvy station data with turn by turn directions and distance measurements",
+                "Writing data application with Streamlit to allow users to explore relevant data by including fine-grained controls for date and time selection",
+                "Wrote copy for the application illustrating environmental impacts of current levels of bike share adoption on carbon emissions, physical space saved by taking a bike vs. motor vehicle",
+                "Currently writing sections to demonstrate average financial savings of adopting mass transit and bicycles vs. motor vehicles",
+                "Future plans include writing modules to demonstrate average health outcomes of bicycle adoption vs motor vehicles, outline current obstacles to increased adoption of alternative transit modalities", 
+                "Additional plans include ability for users of the app to contact their own local elected representatives to advocate for safer, more sustainable transit investments via newsletter and letter writing campaigns"
+            ],
+            "article_urls": ["https://www.linkedin.com/pulse/practicing-data-engineering-from-scratch-how-upended-tanksley-yrzgc"]
+        }
+    }
+}
