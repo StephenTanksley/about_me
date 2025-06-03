@@ -1,4 +1,88 @@
-# Stephen Tanksley
+import streamlit as st
+import json
+import requests
+import datetime
+
+PAGE_TITLE = "Stephen Tanksley Resume - {datetime.date.today()}"
+PAGE_ICON = ":bicycle:"
+
+
+def main():
+    # username = "stephentanksley"
+    # repo = "about_me"
+    # filename = "resume.json"
+    # REPO_URL = f"https://{username}:{TOKEN}@raw.githubusercontent.com/{username}/{repo}/main/{filename}"
+
+    # headers = {
+    #     "Authorization": f"token {TOKEN}",
+    #     "Accept": "application/vnd.github.v4+raw"
+    # }
+
+    # res = requests.get(REPO_URL, headers=headers)
+
+    # if res and res.status_code == 200:
+    #     res = res.json()
+
+    #     name = f"{res.get('first_name')} {res.get('last_name')}"
+    #     email = res.get('email')
+    #     linkedin = res.get('linkedin')
+    #     github = res.get('github')
+    #     education = res.get('education')
+    #     languages = res.get('languages')
+    #     frameworks_and_libraries = res.get('frameworks_and_libraries')
+    #     databases = res.get('databases')
+    #     architecture = res.get('architecture')
+    #     currently_learning = res.get('currently_learning')
+    #     professional_experience = res.get('professional_experience')
+    #     personal_projects = res.get('personal_projects')
+
+        
+    #     st.markdown(body=f"""
+    #     :small[{email} | {linkedin} | {github}]  
+    #     ---  
+    #     """)
+    #     col1, col2 = st.columns(2, gap="small")
+    #     with col1:
+    #         st.write("Languages: ")
+    #         st.write(languages)
+
+    #         st.write("Frameworks/Libraries: ")
+    #         st.write(frameworks_and_libraries)
+
+    #         st.write("Databases: ")
+    #         st.write(databases)
+
+    #         st.write("Architecture: ")
+    #         st.write(architecture)
+
+    #         st.write("Education: ")
+    #         st.write(education)
+        
+    #     with col2:
+    #         st.markdown(f"""
+    #         ### Stephen Tanksley
+    #         #### Data Engineer
+    #         """)
+            
+    #         st.write("An approachable, curious, driven data engineer committed to enacting progressive change to make peoples' lives better")
+
+    #         st.markdown(f"""
+    #         Professional Experience:  
+              
+    #         {[item for item in professional_experience]}
+    #         """)
+
+    #         st.markdown(f"""
+    #         Personal Projects:  
+              
+    #         {[item for item in personal_projects]}
+    #         """)
+        
+    # else:
+    #     print(res)
+
+    st.write("""
+    # Stephen Tanksley
 
 
 📧 [stephen.tanksley@gmail.com](mailto:stephen.tanksley@gmail.com)  
@@ -94,3 +178,8 @@
   *Completed: June 2006*
 
 ---
+
+    """)
+
+if __name__ == '__main__':
+    main()
