@@ -11,7 +11,6 @@ def main():
     # username = "stephentanksley"
     # repo = "about_me"
     # filename = "resume.json"
-    # TOKEN = "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"
     # REPO_URL = f"https://{username}:{TOKEN}@raw.githubusercontent.com/{username}/{repo}/main/{filename}"
 
     # headers = {
