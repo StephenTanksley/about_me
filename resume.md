@@ -59,6 +59,7 @@
 
 **To Do:**
 - Add modules on financial savings, health outcomes, advocacy outreach, and academic source references
+- Develop solution for self-hosting database and Streamlit application
 
 ---
 
