@@ -50,12 +50,12 @@
             "date_ended": "present",
             "responsibilities": [
                 "Architected extensible Docker-based Python CLI ETL utility to migrate data from MS-SQL Server to Postgres with optional intermediate transformations using Pandas and SQLAlchemy",
-                "Created pre-commit hooks for Pentaho Kettle transformation files to standardize deployment across projects and eliminate regressions. Pre-commit hooks remove connection details baked into the file (username, password, hostname, database, port, etc) and enable all steps to render the transformation active, removing the need for redeploys of code due to forgotten disabled hops",
+                "Created pre-commit hooks for Pentaho Kettle transformation files to standardize deployment across projects and eliminate regressions. Pre-commit hooks remove connection details baked into the file (username, password, hostname, database, port, etc) and enable all steps to render the transformation active, removing the need for redeploys of code due to disabled hops",
                 "Separated master config into discrete JSON config files per table to allow utility to run with arbitrary tables, reducing debugging time and improving developer experience. Prior iteration of configs had all jobs running in a single large batch, requiring a restart from the beginning if any steps failed",
-                "Converted scheduled workflows to event-driven job workflows using Job Scheduler 7 for orchestration",
-                "Provided Python language experience and instruction to colleagues less familiar with the language to remove blockers",
+                "Converted scheduled workflows to event-driven workflows using Job Scheduler 7 for orchestration",
+                "Provided Python language experience and instruction to colleagues less familiar with the language",
                 "Implemented setup script to automate Python environment setup for new projects, reducing time needed to spin up a new project by approximately 50% and ensuring consistency across codebases",
-                "Integrated new facility data container into daily ETL workflow by developing and testing all processes in parallel with current production tasks",
+                "Integrated new facility data container into daily ETL workflow by developing and testing all processes in parallel with current production environment",
                 "Modeled and tested new views designed to remove unreliable worker information from Payroll Based Journaling stored procedures. Updated views reduced the number of workers with data discrepancies from ~125 to <5 per reporting period, easing burdens on HIPAA compliance efforts",
                 "Deployed an integration test suite using PyTest for testing PostgreSQL to PostgreSQL transfers (full, recent records only, and date range), contributing to data quality check automation"
             ]
